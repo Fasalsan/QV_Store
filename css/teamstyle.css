@@ -17,6 +17,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  /* background:gray; */
 }
 header {
   position: fixed;
@@ -315,7 +316,7 @@ main {
     auto-fill,
     minmax(var(--auto-grid-min-size), 1fr)
   );
-  grid-gap: 2rem;
+  grid-gap: 1rem;
 }
 
 .card {
