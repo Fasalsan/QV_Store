@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- link jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <title>Footer</title>
+    <style>
+      footer {
+        background-color: #0b0080;
+        color: white;
+        padding: 20px 0;
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        margin-top: 50px;
+        z-index: 0px;
+      }
+      .footer-content {
+        padding: 0px 30px;
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      ul {
+        list-style: none;
+      }
+      .islogo {
+        width: 20%;
+      }
+
+      .md {
+        display: flex;
+        gap: 15px;
+      }
+      .md a {
+        font-size: 24px;
+        background-color: white;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        padding: 5px;
+        border-radius: 50px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .md a:hover {
+        transform: scale(1.05);
+      }
+      .fa-facebook {
+        color: blue;
+      }
+
+      .fa-tiktok {
+        color: black;
+      }
+      .fa-youtube {
+        color: red;
+      }
+      .fa-telegram {
+        color: #24a1de;
+      }
+
+      @media (max-width: 900px) {
+        .footer-content {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 600px) {
+        .footer-content {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <footer>
+      <div class="footer-content">
+        <div>
+          <div>
+            <img class="islogo" src="../img/mylogo.png" alt="" />
+            <div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="md">
+                <a href="/" class="fa-brands fa-facebook"></a>
+                <a href="/" class="fa-brands fa-tiktok"></a>
+                <a href="/" class="fa-brands fa-youtube"></a>
+                <a
+                  href="https://t.me/fasal_san"
+                  class="fa-brands fa-telegram"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugit
+            magni nostrum est facere natus praesentium illo consequatur totam
+            animi aut illum consequuntur soluta accusantium voluptates, rerum
+            rem laboriosam culpa!
+          </p>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugit
+            magni nostrum est facere natus praesentium illo consequatur totam
+            animi aut illum consequuntur soluta accusantium voluptates, rerum
+            rem laboriosam culpa!
+          </p>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugit
+            magni nostrum est facere natus praesentium illo consequatur totam
+            animi aut illum consequuntur soluta accusantium voluptates, rerum
+            rem laboriosam culpa!
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
