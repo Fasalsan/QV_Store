@@ -283,17 +283,17 @@ h6 {
 /* -------------------------------------inside--------------------------------------------- */
 /* mian */
 main {
-  padding-top: 85px;
+  padding-top: 80px;
 }
 
 /* slider_style */
 .group-img-slider {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
 }
 .img-slider {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   object-fit: cover;
   display: none;
 }
@@ -400,4 +400,58 @@ main {
   .card .name-phone {
     font-size: 10px;
   }
+}
+
+/* ---------------------------------------BLog_Product-------------------------------------------- */
+.group-item {
+  padding: 0 100px;
+}
+.group-item-pro {
+  background: gray;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.cards {
+  padding: 20px;
+  width: 20%;
+  height: 50vh;
+  border: 2px solid red;
+  cursor: pointer;
+}
+.cards img {
+  width: 220px;
+}
+.cards:hover img {
+  transition: transform 0.3s;
+  transform: scale(1.1);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cards .blog-title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cards .blog-title .name-pro {
+  display: flex;
+  align-item: center;
+  justify-content: center;
+}
+.cards .blog-title .name-pro span {
+  padding-left: 16px;
+}
+
+.price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.price .dis-price {
+  text-decoration: line-through;
 }
