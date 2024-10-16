@@ -441,6 +441,7 @@ main {
 
 .cards img {
   width: 190px;
+  /* transform:transition(-3%) */
 }
 .cards:hover img {
   transition: transform 0.3s;
