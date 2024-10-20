@@ -3,8 +3,8 @@
   --clr-orange: #fcb040;
   --clr-orange-hover: #c27b11;
   --clr-blue: #33449c;
-  --clr-red: #ae0001;
   --clr-white: #ffffff;
+  --clr-bg: #f2f4f8;
 }
 
 * {
@@ -12,12 +12,9 @@
   padding: 0;
 }
 
-/* body {
+body {
   font-family: "Playwrite DE Grund", cursive;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-} */
+}
 header {
   position: fixed;
   top: 0;
@@ -42,7 +39,7 @@ header .navbar ul li {
   float: left;
 }
 header .navbar ul li a {
-  font-family: Playwrite DE Grund;
+  /* font-family: Playwrite DE Grund; */
   font-size: 16px;
   padding: 30px 20px;
   color: var(--clr-white);
@@ -75,7 +72,7 @@ header button:hover {
 header label {
   cursor: pointer;
   display: none;
-  color:var(--clr-white)
+  color: var(--clr-white);
 }
 
 /* drop */
@@ -154,7 +151,7 @@ header .navbar ul li:hover > ul {
   }
   #menu-bar:checked ~ .navbar {
     display: initial;
-    color:var(--clr-white)
+    color: var(--clr-white);
   }
   header button {
     display: none;
@@ -162,7 +159,6 @@ header .navbar ul li:hover > ul {
 }
 
 /* ---------------------------------------------------------------------------------------------- */
-
 /* footerstyle */
 footer {
   background-color: var(--clr-head);
@@ -170,7 +166,6 @@ footer {
   padding: 16px 7%;
   position: relative;
   bottom: 0px;
-  /* width: 100%; */
   z-index: 0px;
 }
 .footer-content {
@@ -248,9 +243,9 @@ h6 {
 }
 .head-footer ul li {
   padding: 10px;
-  font-size: 20px;
 }
 .head-footer ul li a {
+  font-size: 14px;
   text-decoration: none;
   color: var(--clr-white);
 }
@@ -300,23 +295,43 @@ main {
   display: flex;
   gap: 20px;
 }
+
+.about-l-r .btn-contact button {
+  background: var(--clr-orange);
+  padding: 16px 30px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: transform 0.2s; /* Animation */
+}
+.about-l-r .btn-contact button:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.gp-left h1 {
+  font-size: 20px;
+  font-weight: 400;
+}
 .l-img {
   width: 600px;
 }
 
 @media (max-width: 600px) {
   main {
-    padding: 100px 0 20px 20px;
+    padding: 100px 20px 20px 20px;
   }
   main .respon {
     display: flex;
     flex-direction: column;
   }
   .l-img {
-    width: 350px;
+    width: 100%;
   }
   .about-l-r {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }

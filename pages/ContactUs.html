@@ -53,7 +53,7 @@
         </ul>
       </nav>
 
-      <button onclick="alert('login')">ចូលគណនី</button>
+      <button id="openModal">ចូលគណនី</button>
     </header>
 
     <main>
@@ -62,49 +62,55 @@
       </div>
 
       <div class="con-group">
-        <form>
-          <div class="form-group">
-            <label for="name">ឈ្មោះ</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              placeholder="name"
-            />
-          </div>
-          <div class="form-group">
-            <label for="email">អុីម៉ែល</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="email"
-            />
-          </div>
-          <div class="form-group">
-            <label for="message">សារ</label>
-            <textarea
-              id="message"
-              name="message"
-              required
-              placeholder="Message"
-            ></textarea>
-          </div>
-          <button type="submit" class="submit-btn">ផ្ញើរសារ</button>
+        <div class="item-left">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">ឈ្មោះ</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">អុីម៉ែល</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">សារ</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">ផ្ញើរសារ</button>
+          </form>
 
           <div class="media-icon">
             <div class="form-icon-m">
-              <i class="fa-solid fa-location-dot"></i>
+              <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
               <div class="cont">
                 <h4>ទីតាំង:</h4>
-                <p>#st 123 chroy changva phnom penh</p>
+                <p>ផ្សារឈូកវ៉ា១ ផ្ទះលេខ 19D ផ្លូវលេខ 03 រាជធានីភ្នំពេញ</p>
               </div>
             </div>
 
             <div class="form-icon-m">
-              <i class="fa-solid fa-phone"></i>
+              <div class="phone">
+                <i class="fa-solid fa-phone"></i>
+              </div>
               <div class="cont">
                 <h4>លេខទូរសេព្ទ័:</h4>
                 <p>081 567 015</p>
@@ -112,17 +118,45 @@
             </div>
 
             <div class="form-icon-m">
-              <i class="fa-solid fa-envelope"></i>
+              <div class="mail">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
               <div class="cont">
                 <h4>អុីម៉ែល:</h4>
                 <p>phoneshop21@gmail.com</p>
               </div>
             </div>
           </div>
-        </form>
+        </div>
 
         <div class="r">
-          <img src="/img//contact.gif" alt="" />
+          <img
+            src="https://dukami.com/wp-content/uploads/2023/02/smm-gif-dukami.gif"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- Trigger Button -->
+      <!-- <button id="openModal">Open Modal</button> -->
+
+      <!-- Modal Structure -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form class="login-form">
+            <h2>Login</h2>
+            <div class="input-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" required />
+            </div>
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+            <button class="btn-submit" type="submit">Login</button>
+            <p class="forgot-password"><a href="#">Forgot password?</a></p>
+          </form>
         </div>
       </div>
     </main>
@@ -186,5 +220,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="../js/contact.js"></script>
   </body>
 </html>

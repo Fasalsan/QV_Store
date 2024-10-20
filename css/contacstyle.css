@@ -3,8 +3,8 @@
   --clr-orange: #fcb040;
   --clr-orange-hover: #c27b11;
   --clr-blue: #33449c;
-  --clr-red: #ae0001;
   --clr-white: #ffffff;
+  --clr-bg: #f2f4f8;
 }
 
 * {
@@ -12,12 +12,12 @@
   padding: 0;
 }
 
-/* body {
+body {
   font-family: "Playwrite DE Grund", cursive;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-} */
+}
 header {
   position: fixed;
   top: 0;
@@ -75,7 +75,7 @@ header button:hover {
 header label {
   cursor: pointer;
   display: none;
-  color:var(--clr-white)
+  color: var(--clr-white);
 }
 
 /* drop */
@@ -154,7 +154,7 @@ header .navbar ul li:hover > ul {
   }
   #menu-bar:checked ~ .navbar {
     display: initial;
-    color:var(--clr-white)
+    color: var(--clr-white);
   }
   header button {
     display: none;
@@ -170,7 +170,6 @@ footer {
   padding: 16px 7%;
   position: relative;
   bottom: 0px;
-  /* width: 100%; */
   z-index: 0px;
 }
 .footer-content {
@@ -248,9 +247,9 @@ h6 {
 }
 .head-footer ul li {
   padding: 10px;
-  font-size: 20px;
 }
 .head-footer ul li a {
+  font-size: 14px;
   text-decoration: none;
   color: var(--clr-white);
 }
@@ -281,11 +280,10 @@ h6 {
   }
 }
 
-
 /* -------------------------------------inside--------------------------------------------- */
 /* mian */
 main {
-  /* background-color: gray; */
+  background-color: var(--clr-bg);
   padding: 100px;
 }
 
@@ -297,14 +295,15 @@ main {
 }
 
 .con-group {
-  width: 100%;
+  /* width: 100%; */
   padding: 0px 30px;
   display: flex;
   justify-content: space-between;
   height: fit-content;
 }
-.con-group form {
-  width: 100%;
+.item-left {
+  display: flex;
+  flex-direction: column;
 }
 .con-group l {
   width: 100%;
@@ -313,7 +312,7 @@ main {
   width: 100%;
 }
 img {
-  width: 800px;
+  width: 600px;
 }
 
 h1 {
@@ -342,6 +341,10 @@ h1 {
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
+.form-group textarea {
+  height: 120px;
+}
+
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
@@ -351,18 +354,19 @@ h1 {
 }
 
 .submit-btn {
-  background-color: #0b0080;
+  background-color: var(--clr-orange);
   color: white;
   border: none;
   border-radius: 4px;
   padding: 10px 15px;
   cursor: pointer;
   width: 100%;
-  transition: background-color 0.3s;
+  transition: 0.3s;
 }
 
 .submit-btn:hover {
-  background-color: rgb(0, 0, 204);
+  background-color: var(--clr-orange-hover);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .media-icon {
@@ -373,7 +377,7 @@ h1 {
   gap: 30px;
 }
 .media-icon i {
-  background-color: #0b0080;
+  background-color: var(--clr-orange);
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -383,6 +387,25 @@ h1 {
   color: white;
   font-size: 20px;
 }
+.form-icon-m:hover .mail i,
+.form-icon-m:hover .phone i,
+.form-icon-m:hover .location i {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  animation: rotateImage 1s;
+  background: var(--clr-white);
+  color: var(--clr-orange);
+}
+
+@keyframes rotateImage {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
 .form-icon-m {
   display: flex;
   align-items: center;
@@ -403,15 +426,113 @@ h1 {
 }
 
 @media (max-width: 600px) {
-  main{
-    padding:70px 10px
+  main {
+    padding: 70px 10px;
   }
-  .r img{
-    width:100%
+  .r img {
+    width: 100%;
   }
   .con-group {
     padding: 15px;
     display: flex;
     flex-direction: column-reverse;
   }
+  .con-group form {
+    width: 100%;
+  }
+}
+
+/* ================================================================MODAL============================================================== */
+/* Modal Default Styles (Hidden) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+}
+
+/* Modal Content Box */
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%; /* Width of the modal */
+  max-width: 400px; /* Maximum width */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.input-group input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 10px;
+  background-color:var(--clr-orange);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color:var(--clr-orange-hover);
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-password a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
 }
