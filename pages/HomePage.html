@@ -17,7 +17,9 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Playwrite+DE+Grund&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="/css/header-footerstyle.css" />
     <link rel="stylesheet" type="text/css" href="/css/homestyle.css" />
+    <link rel="stylesheet" type="text/css" href="/css/modalstyle.css" />
     <title>QV Store</title>
   </head>
   <body>
@@ -51,7 +53,7 @@
         </ul>
       </nav>
 
-      <button onclick="alert('login')">ចូលគណនី</button>
+      <button id="openModal">ចូលគណនី</button>
     </header>
 
     <!-- body -->
@@ -434,6 +436,39 @@
           </div>
         </div>
       </div>
+
+      <!-- Modal -->
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form class="login-form">
+            <h2>Login</h2>
+            <div class="input-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" required />
+            </div>
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+            <button class="btn-submit" type="submit">Login</button>
+            <p class="forgot-password"><a href="#">Forgot password?</a></p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Modal-->
+      <button id="openModal">Open Modal</button>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <h2>Full Page Modal</h2>
+          <p>
+            This is a modal that covers the entire page! Click outside this box
+            to close it.
+          </p>
+        </div>
+      </div>
     </main>
 
     <!-- footer -->
@@ -495,23 +530,8 @@
         </div>
       </div>
     </footer>
+    <script src="../js/test.js"></script>
   </body>
-  <script>
-    var myIndex = 0;
-    carousel();
 
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("img-slider");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length) {
-        myIndex = 1;
-      }
-      x[myIndex - 1].style.display = "block";
-      setTimeout(carousel, 2000); // Change image every 2 seconds
-    }
-  </script>
+
 </html>

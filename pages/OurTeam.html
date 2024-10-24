@@ -11,13 +11,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Playwrite+DE+Grund&display=swap"
       rel="stylesheet"
-    />
+    /> -->
+    <link rel="stylesheet" type="text/css" href="/css/header-footerstyle.css" />
     <link rel="stylesheet" type="text/css" href="/css/teamstyle.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../css/modalstyle.css" /> -->
     <title>QV Store</title>
   </head>
   <body>
@@ -51,15 +53,19 @@
         </ul>
       </nav>
 
-      <button onclick="alert('login')">ចូលគណនី</button>
+      <button>ចូលគណនី</button>
     </header>
 
     <main>
       <div class="label-per-page">
         <h1>សមាជិកក្រុម</h1>
         <p>
-          សមាជិកក្រុមយើងខ្ញុំមានចំនួន 8 នាក់ ដែលបានសហការគ្នាដើម្បីរៀងចំ web site នេះឡើងមក ដើម្បីឱ្យអតិថិជនងាយស្រួលក្នុងការពិនិត្យអំពីព័ត៌មានផ្សេងៗរបស់ហាងយើងខ្ញុំ រួចទាំងតម្លៃនិងព័ត៌មានលម្អិតរបស់ Model នីមួយៗ ដែលផ្តល់ជាភាពងាយស្រួលដល់អតិថិជន។
-          ក្នុងនោះក៏មានជា Contact របស់សមាជិកក្រុមយើងខ្ញុំផងដែរ។
+          សមាជិកក្រុមយើងខ្ញុំមានចំនួន 8 នាក់ ដែលបានសហការគ្នាដើម្បីរៀងចំ web site
+          នេះឡើងមក
+          ដើម្បីឱ្យអតិថិជនងាយស្រួលក្នុងការពិនិត្យអំពីព័ត៌មានផ្សេងៗរបស់ហាងយើងខ្ញុំ
+          រួចទាំងតម្លៃនិងព័ត៌មានលម្អិតរបស់ Model នីមួយៗ
+          ដែលផ្តល់ជាភាពងាយស្រួលដល់អតិថិជន។ ក្នុងនោះក៏មានជា Contact
+          របស់សមាជិកក្រុមយើងខ្ញុំផងដែរ។
         </p>
       </div>
       <div class="card-group">
@@ -252,7 +258,17 @@
           </div>
         </div>
       </div>
-    </main>
+      <!-- Modal-->
+      <button id="openModal">Open Modal</button>
+
+      <div id="myModal" class="modal">
+          <div class="modal-content">
+              <h2>Full Page Modal</h2>
+              <p>This is a modal that covers the entire page! Click outside this box to close it.</p>
+          </div>
+      </div>
+  
+      <script src="../js/test.js"></script>
 
     <!-- footer -->
     <footer>
@@ -314,4 +330,5 @@
       </div>
     </footer>
   </body>
+
 </html>
