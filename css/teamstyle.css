@@ -19,7 +19,7 @@ body {
 }
 /* -----------------------------------inside-------------------------------------------- */
 main {
-  padding: 100px;
+  padding: 80px;
 }
 .label-per-page {
   padding: 20px 0 40px 0;
@@ -143,9 +143,6 @@ main {
   }
 }
 
-
-
-
 body {
   font-family: Arial, sans-serif;
 }
@@ -174,4 +171,3 @@ button {
   width: 80%; /* Could be more or less, depending on screen size */
   text-align: center;
 }
-

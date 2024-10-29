@@ -35,7 +35,7 @@ main {
   gap: 20px;
 }
 
-.about-l-r .btn-contact button {
+.btn-contact button {
   background: var(--clr-orange);
   padding: 16px 30px;
   border-radius: 10px;
@@ -45,7 +45,10 @@ main {
   cursor: pointer;
   transition: transform 0.2s; /* Animation */
 }
-.about-l-r .btn-contact button:hover {
+a {
+  text-direction: none;
+}
+.btn-contact button:hover {
   transform: scale(1.1);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
