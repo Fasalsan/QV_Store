@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <!-- font-awesome link -->
     <link
       rel="stylesheet"
@@ -16,17 +17,30 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <meta charset="UTF-8" />
+
+    <!-- css link -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../cssProduct/appleStyle.css"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Apple</title>
   </head>
   <body>
+    <!-- navbar -->
     <div id="header"></div>
-    <h1>Testing Link page!</h1>
+    <!-- body -->
+    <main>
+      <div class="img_front">
+        <img src="../imgProduct/apple/backgrounf.png" alt="" />
+      </div>
+      <h1>Apple</h1>
+    </main>
+
+    <!-- footer -->
     <div id="footer"></div>
   </body>
-  <script type="text/javascript">
-    $("#header").load("/component/Header.html");
-    $("#footer").load("/component/Footer.html");
-  </script>
+  <script src="../js/header_footer.js"></script>
 </html>
