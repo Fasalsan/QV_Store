@@ -2,45 +2,203 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- font-awesome link -->
+        <!-- jquery script -->
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+          <!-- font-awesome link -->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- jquery script -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-    <!-- css link -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../cssProduct/appleStyle.css"
-    />
-
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apple</title>
+    <title>Product</title>
+    <link rel="stylesheet" href="../cssProduct/apple/iPhone.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- navbar -->
     <div id="header"></div>
-    <!-- body -->
-    <main>
-      <div class="img_front">
-        <img src="../imgProduct/apple/backgrounf.png" alt="" />
+
+    <div class="block_img" data-aos="fade-down" data-aos-duration="1000">
+      <img src="../imgProduct/apple/backgrounf.png" alt="" />
+    </div>
+
+    <div class="block_product">
+      <div class="title">
+        <hr id="line1" />
+        <div class="block_title">
+          <h2>iPhone</h2>
+        </div>
+        <hr id="line2" />
       </div>
-      <h1>Apple</h1>
-    </main>
+      <!-- ------------------------------Product Card---------------------------------- -->
+
+      <div class="product">
+        <div class="product_box">
+          <div class="box_img">
+            <a href="/ourProduct/detail/iPhone16.html">
+              <img src="/imgProduct/apple/iphone16.png" alt="" />
+            </a>
+          </div>
+          <div class="box_title">
+            <h3>iPhone 16 Pro Max</h3>
+          </div>
+          <div class="box_price">
+            <p>1199$</p>
+            <s>1299$</s>
+          </div>
+          <div class="box_btn">
+            <p>
+              <a target="_blank" href=""><button>Buy Now</button></a>
+            </p>
+          </div>
+        </div>
+
+        <div class="product_box">
+          <div class="box_img">
+            <a href="../ourProduct/detail/iPhone15.html">
+              <img src="../imgProduct/apple/iphone15.png" alt="" />
+            </a>
+          </div>
+          <div class="box_title">
+            <h3>iPhone 15 Pro Max</h3>
+          </div>
+          <div class="box_price">
+            <p>1059$</p>
+            <s>1168$</s>
+          </div>
+          <div class="box_btn">
+            <p>
+              <a href=""><button>Buy Now</button></a>
+            </p>
+          </div>
+        </div>
+
+        <div class="product_box">
+          <div class="box_img">
+            <a href="/ourProduct/detail/iPhone14.html">
+              <img src="../imgProduct/apple/iphone14.png" alt="" />
+            </a>
+          </div>
+          <div class="box_title">
+            <h3>iPhone 14 Pro Max</h3>
+          </div>
+          <div class="box_price">
+            <p>979$</p>
+            <s>1168$</s>
+          </div>
+          <div class="box_btn">
+            <p>
+              <a target="_blank" href=""><button>Buy Now</button></a>
+            </p>
+          </div>
+        </div>
+
+        <div class="product_box">
+          <div class="box_img">
+            <a href="/ourProduct/detail/iPhone13.html">
+              <img src="../imgProduct/apple/iphone13.png" alt="" />
+            </a>
+          </div>
+          <div class="box_title">
+            <h3>iPhone 13 Pro Max</h3>
+          </div>
+          <div class="box_price">
+            <p>849$</p>
+            <s>999$</s>
+          </div>
+          <div class="box_btn">
+            <button>Buy Now</button>
+          </div>
+        </div>
+
+        <div class="product_box">
+          <div class="box_img">
+            <a href="/ourProduct/detail/iPhone12.html">
+              <img src="../imgProduct/apple/iphone12.png" alt="" />
+            </a>
+          </div>
+          <div class="box_title">
+            <h3>iPhone 12 Pro Max</h3>
+          </div>
+          <div class="box_price">
+            <p>565$</p>
+            <s>599$</s>
+          </div>
+          <div class="box_btn">
+            <button>Buy Now</button>
+          </div>
+        </div>
+
+        <div class="product_box">
+          <div class="box_img">
+            <a href="/ourProduct/detail/iPhone11.html">
+              <img src="../imgProduct/apple/iphone11.png" alt="" />
+            </a>
+          </div>
+          <div class="box_title">
+            <h3>iPhone 11 Pro Max</h3>
+          </div>
+          <div class="box_price">
+            <p>435$</p>
+            <s>468$</s>
+          </div>
+          <div class="box_btn">
+            <button>Buy Now</button>
+          </div>
+        </div>
+
+        <div class="product_box">
+          <div class="box_img">
+            <a href="/ourProduct/detail/iphoneX.html">
+              <img src="../imgProduct/apple/iphoneX.png" alt="" />
+            </a>
+          </div>
+          <div class="box_title">
+            <h3>iPhone Xs Max</h3>
+          </div>
+          <div class="box_price">
+            <p>355$</p>
+            <s>410$</s>
+          </div>
+          <div class="box_btn">
+            <button>Buy Now</button>
+          </div>
+        </div>
+
+        <div class="product_box">
+          <div class="box_img">
+            <a href="/ourProduct/detail/iPhone8.html">
+              <img src="../imgProduct/apple/iphone8.png" alt="" />
+            </a>
+          </div>
+          <div class="box_title">
+            <h3>iPhone 8 Plus</h3>
+          </div>
+          <div class="box_price">
+            <p>175$</p>
+            <s>199$</s>
+          </div>
+          <div class="box_btn">
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- footer -->
     <div id="footer"></div>
   </body>
-  <script src="../js/header_footer.js"></script>
 </html>
+<script src="../js/header_footer.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
