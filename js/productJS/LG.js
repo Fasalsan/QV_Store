@@ -86,7 +86,7 @@ const displayProducts = () => {
           
           <div  class="cards">
             <!-- Product Image -->
-            <img src="${product.img}" alt="${product.name} ${product.variant}" />
+            <img src="${product.img}"/>
   
             <!-- Product Name and Title -->
             <div class="blog-title">
